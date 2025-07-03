@@ -62,9 +62,10 @@ if (isset($_POST['login'])) {
         $_SESSION['name'] = $user['name'];
         $_SESSION['ip'] = $ip;
         $_SESSION['device'] = $device;
+
+        date_default_timezone_set('Asia/Kolkata');
         $_SESSION['login_time'] = date("Y-m-d H:i:s");
 
-       
         // Remember me cookie
         if (isset($_POST['remember'])) {
             setcookie("remember_email", $email, time() + 3600, "/", "", true, true);
