@@ -130,7 +130,7 @@ box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 <p><strong>Email:</strong> <?= htmlspecialchars($user['email']) ?></p>
 <p><strong>IP:</strong> <?= htmlspecialchars($_SESSION['ip']) ?></p>
 <p><strong>Device:</strong> <?= htmlspecialchars($_SESSION['device']) ?></p>
-<p><strong>Login Time:</strong> <?= htmlspecialchars($_SESSION['login_time'] ?? 'N/A') ?></p>
+<p><strong>Login Time:</strong> <?= htmlspecialchars($_SESSION['login_time']) ?></p>
 <hr>
 <p><strong>Location:</strong> <?= htmlspecialchars($city) ?>, <?= htmlspecialchars($country) ?> </p>
 <p><strong>Weather:</strong> <?= htmlspecialchars(ucwords($description)) ?>, <?= htmlspecialchars($temperature) ?>°C </p>
